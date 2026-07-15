@@ -10,7 +10,7 @@
 
 const SITE_CONFIG = {
   // GitHub username used by js/github.js to pull repositories live.
-  githubUsername: "sushilaradhye",
+  githubUsername: "sushilaradhye99-cmyk",
 
   // How many repositories to display, sorted by most recently updated.
   githubRepoCount: 6,
@@ -40,7 +40,7 @@ const SITE_CONFIG = {
     email: "Sushilaradhye2@gmail.com",
     location: "Maharashtra, India",
     linkedin: "https://linkedin.com/in/sushil-aradhye-4160043b2",
-    github: "https://github.com/sushilaradhye",
+    github: "https://github.com/sushilaradhye99-cmyk",
     resume: "assets/resume.pdf",
   },
 };
