@@ -1,0 +1,79 @@
+/**
+ * themes.css — design tokens
+ * Dark mode is the primary identity (a data console at night); light mode
+ * swaps the same tokens for a bright lab-whiteboard feel. Every color used
+ * anywhere in the site should resolve back to one of these variables.
+ */
+
+:root {
+  /* ---------- type ---------- */
+  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Consolas", monospace;
+
+  /* ---------- motion ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.2s;
+  --dur-med: 0.5s;
+  --dur-slow: 1s;
+
+  /* ---------- layout ---------- */
+  --container: 1180px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --nav-height: 76px;
+}
+
+/* ============================= DARK (default) ============================= */
+[data-theme="dark"] {
+  --bg-0: #05080f;
+  --bg-1: #0a1220;
+  --bg-2: #0e1a2e;
+  --panel: rgba(16, 28, 48, 0.55);
+  --panel-solid: #0e1a2e;
+  --panel-border: rgba(0, 212, 255, 0.16);
+
+  --text-hi: #eef6ff;
+  --text-mid: #a9bdd6;
+  --text-low: #6b7f9c;
+
+  --accent: #00d4ff;
+  --accent-2: #00ffff;
+  --accent-3: #7c5cff;
+  --accent-contrast: #041017;
+
+  --grad-hero: radial-gradient(60% 60% at 50% 0%, #0c2038 0%, #05080f 70%);
+  --shadow-glow: 0 0 40px rgba(0, 212, 255, 0.18);
+  --shadow-card: 0 20px 60px -20px rgba(0, 0, 0, 0.6);
+  --scrollbar-track: #0a1220;
+
+  --link-body-shadow: none;
+  color-scheme: dark;
+}
+
+/* ============================= LIGHT ============================= */
+[data-theme="light"] {
+  --bg-0: #eef4fb;
+  --bg-1: #f7fafd;
+  --bg-2: #ffffff;
+  --panel: rgba(255, 255, 255, 0.65);
+  --panel-solid: #ffffff;
+  --panel-border: rgba(0, 122, 173, 0.18);
+
+  --text-hi: #0a1626;
+  --text-mid: #3b526b;
+  --text-low: #6d829a;
+
+  --accent: #007ea8;
+  --accent-2: #00a8b5;
+  --accent-3: #5b48d0;
+  --accent-contrast: #ffffff;
+
+  --grad-hero: radial-gradient(60% 60% at 50% 0%, #dcecfb 0%, #eef4fb 70%);
+  --shadow-glow: 0 0 40px rgba(0, 126, 168, 0.12);
+  --shadow-card: 0 20px 50px -25px rgba(10, 30, 60, 0.25);
+  --scrollbar-track: #dce8f5;
+
+  color-scheme: light;
+}

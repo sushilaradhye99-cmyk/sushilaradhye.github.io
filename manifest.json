@@ -1,0 +1,16 @@
+{
+  "name": "Sushil Rajesh Aradhye — Data Analyst Portfolio",
+  "short_name": "Sushil Aradhye",
+  "description": "Transforming Raw Data into Meaningful Business Insights.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05080f",
+  "theme_color": "#00D4FF",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

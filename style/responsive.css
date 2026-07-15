@@ -1,0 +1,47 @@
+/* =========================================================================
+   responsive.css — breakpoint overrides, mobile-first adjustments
+   ========================================================================= */
+
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .query-console { max-width: 560px; transform: none; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-portrait { max-width: 360px; margin-inline: auto; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 860px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+
+  #navbar.mobile-open .nav-links {
+    display: flex;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0; right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 18px 24px 26px;
+    background: var(--panel-solid);
+    border-bottom: 1px solid var(--panel-border);
+  }
+  #navbar.mobile-open .nav-links a { width: 100%; padding: 10px 0; }
+
+  .section { padding: 84px 0; }
+}
+
+@media (max-width: 700px) {
+  .form-row { grid-template-columns: 1fr; }
+  .form-row .field { grid-column: 1/-1; }
+  .exp-head { flex-direction: column; align-items: flex-start; }
+  #chatbot-window { right: 16px; bottom: 92px; }
+  #chatbot-toggle { right: 16px; bottom: 20px; }
+}
+
+@media (max-width: 520px) {
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { justify-content: center; }
+  .about-stats { grid-template-columns: 1fr 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
