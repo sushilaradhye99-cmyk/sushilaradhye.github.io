@@ -66,9 +66,12 @@ private counter.
 
 - Replace `assets/resume.pdf` with your real resume (same filename, or update
   the path in `index.html`).
-- Replace the SVG placeholders in `assets/images/projects/` with real
-  dashboard screenshots (keep the same filenames, or update the `image` field
-  per project in `js/main.js`).
+- Dashboard screenshots have been added to `assets/images/projects/`:
+  - `Amazon-dashboard.png.png` → Amazon Sales Analytics Dashboard
+  - `Crime-analysis dashboard.png.png` → Crime Analysis Dashboard
+  - `Tradingbot-png.png` → Trading Bot Analytics
+  - `Coffee shop sales dashboard.png.png` → Coffee Shop Sales Dashboard
+- To add or replace project images, update the `image` field per project in `js/main.js`.
 
 ## Tech stack
 
